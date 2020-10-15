@@ -98,15 +98,6 @@
                     "colors": "#cfe1ff, #2679ff"
                 }
             ]
-        },
-        "ZAIDAH":{
-            "frames": [
-                {   
-                    "type": "linear-gradient",
-                    "direction": "to bottom",
-                    "colors": "red, orange, yellow, green, blue, indigo , violet"
-                }
-            ]
         }
     }
 }
