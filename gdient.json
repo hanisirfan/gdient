@@ -1,101 +1,12 @@
 {
     "gradient-list" : 
     {
-        "RGB":{
+        "YOUR-GRADIENT-NAME":{
             "frames": [
                 {   
                     "type": "linear-gradient",
-                    "direction": "0deg",
-                    "colors": "red, green, blue"
-                },
-                {
-                    "type": "linear-gradient",
-                    "direction": "90deg",
-                    "colors": "red, green, blue"
-                },
-                {
-                    "type": "linear-gradient",
-                    "direction": "180deg",
-                    "colors": "red, green, blue"
-                },
-                {
-                    "type": "linear-gradient",
-                    "direction": "270deg",
-                    "colors": "red, green, blue"
-                },
-                {
-                    "type": "linear-gradient",
-                    "direction": "0deg",
-                    "colors": "red, green, blue"
-                },
-                {
-                    "type": "linear-gradient",
-                    "direction": "90deg",
-                    "colors": "red, green, blue"
-                },
-                {
-                    "type": "linear-gradient",
-                    "direction": "180deg",
-                    "colors": "red, green, blue"
-                },
-                {
-                    "type": "linear-gradient",
-                    "direction": "270deg",
-                    "colors": "red, green, blue"
-                }
-            ]
-        },
-        "WATER":{
-            "frames": [
-                {   
-                    "type": "linear-gradient",
-                    "direction": "to bottom left",
-                    "colors": "#cfe1ff, #2679ff"
-                },
-                {   
-                    "type": "linear-gradient",
-                    "direction": "to bottom",
-                    "colors": "#cfe1ff, #2679ff"
-                }
-                ,{   
-                    "type": "linear-gradient",
-                    "direction": "to bottom right",
-                    "colors": "#cfe1ff, #2679ff"
-                }
-                ,{   
-                    "type": "linear-gradient",
-                    "direction": "to bottom",
-                    "colors": "#cfe1ff, #2679ff"
-                }
-                ,{   
-                    "type": "linear-gradient",
-                    "direction": "to bottom left",
-                    "colors": "#cfe1ff, #2679ff"
-                }
-                ,{   
-                    "type": "linear-gradient",
-                    "direction": "to bottom left",
-                    "colors": "#cfe1ff, #2679ff"
-                },
-                {   
-                    "type": "linear-gradient",
-                    "direction": "to bottom",
-                    "colors": "#cfe1ff, #2679ff"
-                }
-                ,{   
-                    "type": "linear-gradient",
-                    "direction": "to bottom right",
-                    "colors": "#cfe1ff, #2679ff"
-                }
-                ,{   
-                    "type": "linear-gradient",
-                    "direction": "to bottom",
-                    "colors": "#cfe1ff, #2679ff"
-                }
-                ,{   
-                    "type": "linear-gradient",
-                    "direction": "to bottom left",
-                    "colors": "#cfe1ff, #2679ff"
+                    "direction": "YOUR GRADIENT DIRECTION",
+                    "colors": "COLOR-LIST (lower case, seperated by comma)"
                 }
             ]
         }
