@@ -42,6 +42,6 @@ This work is still under progress.
 
 
 
-**DEMO:** [https://github.hanisirfan.xyz/gdient/demo.html](https://github.hanisirfan.xyz/gdient)
+**DEMO:** [https://github.hanisirfan.xyz/gdient/demo.html](https://github.hanisirfan.xyz/gdient/demo.html)
 
 I don't know who ever need to use this thing but well ¯\_(ツ)_/¯
