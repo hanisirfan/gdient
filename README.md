@@ -9,16 +9,21 @@ This work is still under progress.
    ```
    {
     "gradient-list" : 
-    {
-        "YOUR-GRADIENT-NAME": [
-            "frames": [
-                {   
-                    "type": "linear-gradient",
-                    "direction": "YOUR GRADIENT DIRECTION",
-                    "colors": "COLOR-LIST (lower case, seperated by comma)"
-                },
-        ]
-    }
+        {
+            "YOUR-GRADIENT-NAME": [
+                "frames": [
+                    {   
+                        "type": "linear-gradient",
+                        "direction": "YOUR GRADIENT DIRECTION",
+                        "colors": "COLOR-LIST (lower case, seperated by comma)"
+                    }
+                    ,{   
+                        "type": "linear-gradient",
+                        "direction": "YOUR GRADIENT DIRECTION",
+                        "colors": "COLOR-LIST (lower case, seperated by comma)"
+                    }
+            ]
+        }
    }
    ```
    All of the properties and values is following CSS syntax.
@@ -27,15 +32,16 @@ This work is still under progress.
 
 2. Run the function (Event Listener etc) `gdient()` with all the needed parameters.
 
+
+    `gdient(sourceFile, targetElement, gradient, frameDuration, gradientDuration)`
     - **sourceFile** - *Location of gdient JSON file (local or server). Must include .json extension*
     - **targetElement** - *Element that will output the gradient*
     - **gradient** - *Gradient name in JSON file*
     - **frameDuration** - *Duration of each frame (in seconds) . Min 1 second. Only for infinite gradientDuration*
     - **gradientDuration** - *Duration of a gradient (in seconds) . For infinite duration use 'i'*
 
-    `gdient(sourceFile, targetElement, gradient, frameDuration, gradientDuration)`
 
 
-**DEMO:** https://github.hanisirfan.xyz/gdient
+**DEMO:** [https://github.hanisirfan.xyz/gdient/demo.html](https://github.hanisirfan.xyz/gdient)
 
 I don't know who ever need to use this thing but well ¯\_(ツ)_/¯
