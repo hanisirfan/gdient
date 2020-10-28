@@ -1,4 +1,5 @@
 /**
+ * Gdient - by Muhammad Hanis Irfan
  * @param {string} sourceFile - Location of gdient JSON file (local or server). Must include .json extension
  * @param {string} targetElement - Element that will output the gradient
  * @param {string} gradient - Gradient name in JSON file
@@ -14,7 +15,7 @@ function gdient(sourceFile, targetElement, gradient, frameDuration, gradientDura
         var frameList = jsonData['frames'];
         var frameListLength = frameList.length;
         //Add condition to check whether gradianDuration is infinite or not later   
-        if(gradientDuration == 'i'){
+        if(gradientDuration != 'i'){
             //Fixed gradientDuration
             target.style.transition = 'background-color 1s';
             console.log(frameDuration);
@@ -26,19 +27,20 @@ function gdient(sourceFile, targetElement, gradient, frameDuration, gradientDura
                     console.log(frame['colors']);
                 }, i * frameDuration * 1000)       
             }
-        }else{
-            //Fixed gradientDuration
-            target.style.transition = 'background-color 1s';
-            var frameDurationD = gradientDuration / frameListLength * 1000;
-            console.log(frameDurationD);
-            for (let i = 0; i < frameListLength; i++){       
-                setTimeout(function () {   
+        }if(gradientDuration == 'i'){
+            //Infinite gradientDuration
+            function infiniteGdient() {
+                target.style.transition = 'background-color 1s';
+                var frameDurationD = gradientDuration / frameListLength * 1000;
+                console.log(frameDurationD);
+                for (let i = 0; i < frameListLength; i++){         
                     let frame = frameList[i];
                     target.style.background = 'linear-gradient' + '(' + frame['direction'] + ',' + frame['colors'] + ')';
                     console.log(frame['direction']);
-                    console.log(frame['colors']);
-                }, i* frameDurationD)       
+                    console.log(frame['colors']);  
+                }
             }
+            setInterval(infiniteGdient, 5000);
         }
     });
 }
